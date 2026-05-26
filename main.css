@@ -2327,10 +2327,15 @@ button,
 
 .rossmann-details {
 	display: flex;
-	gap: 2rem;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 3rem;
 	margin-top: 2rem;
+	width: 100%;
 }
 
 .rossmann-details > div {
 	flex: 1;
+	min-width: 0;
 }

@@ -2319,6 +2319,10 @@ button,
 	}
 }
 
+.rossmann-highlight article {
+	width: 100%;
+}
+
 .rossmann-highlight .image img {
 	width: 100%;
 	max-height: 500px;
@@ -2327,15 +2331,11 @@ button,
 
 .rossmann-details {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: flex-start;
+	flex-wrap: wrap;
 	gap: 3rem;
 	margin-top: 2rem;
-	width: 100%;
 }
 
 .rossmann-details > div {
-	flex: 1;
-	min-width: 0;
+	flex: 1 1 300px;
 }

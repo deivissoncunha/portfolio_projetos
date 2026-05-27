@@ -2329,13 +2329,31 @@ button,
 	object-fit: contain;
 }
 
+/* BLOCO PRINCIPAL */
 .rossmann-details {
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	gap: 3rem;
 	margin-top: 2rem;
+	align-items: start;
 }
 
-.rossmann-details > div {
-	flex: 1 1 300px;
+/* COLUNAS */
+.rossmann-details .detail-column {
+	width: 100%;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 980px) {
+	.rossmann-details {
+		grid-template-columns: 1fr;
+	}
+}
+
+.detail-column {
+	padding-right: 1rem;
+}
+
+.detail-column:first-child {
+	border-right: solid 1px rgba(210, 215, 217, 0.75);
 }
